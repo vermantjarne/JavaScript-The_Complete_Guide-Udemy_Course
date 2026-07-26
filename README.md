@@ -1,2 +1,2 @@
-# JavaScript-The_Complete_Guide-Udemy_Course
-The complete package of all projects from the Udemy course "JavaScript - The Complete Guide".
+# JavaScript - The Complete Guide (Udemy Course)
+This repository contains every project created for the Udemy course [JavaScript - The Complete Guide]([https://www.udemy.com/course/the-complete-guide-to-angular-2](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced)) by [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/). This repository is created with the intention of being able to revisit barebone projects and concepts of the Angular framework.
