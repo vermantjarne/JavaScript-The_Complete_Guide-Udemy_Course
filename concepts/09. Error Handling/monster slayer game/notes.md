@@ -1,0 +1,1 @@
+In JavaScript, for-of loops are used to loop through elements in arrays, while for-in loops are used to loop through keys of objects.
