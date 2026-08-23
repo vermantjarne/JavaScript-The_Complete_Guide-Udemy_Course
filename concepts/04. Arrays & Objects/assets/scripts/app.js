@@ -21,22 +21,31 @@ function writeOutput(operator, resultBeforeCalculation, resultAfterCalculation) 
     outputResult(currentResult, description);
 }
 
-function add() {
-    const inputValue = getUserInputAsNumber();
-    // const description = `${currentResult} + ${inputValue}`;
-    const initialResult = currentResult;
-    currentResult += inputValue;
-    // currentResult = currentResult + +userInput.value;
-    // outputResult(currentResult, description);
-    writeOutput("+", initialResult, inputValue);
+function writeToLog(operation, leftOperand, rightOperand, result) {
     const logEntry = {
-        operation: "addition",
-        lefOperand: initialResult,
-        rightOperand: inputValue,
-        result: currentResult
+        operation: operation,
+        leftOperand: leftOperand,
+        rightOperand: rightOperand,
+        result: result
     };
     logEntries.push(logEntry);
     console.log(logEntries);
+}
+
+function add() {
+    const inputValue = getUserInputAsNumber();
+    const initialResult = currentResult;
+    currentResult += inputValue;
+    writeOutput("+", initialResult, inputValue);
+    // const logEntry = {
+    //     operation: "addition",
+    //     lefOperand: initialResult,
+    //     rightOperand: inputValue,
+    //     result: currentResult
+    // };
+    // logEntries.push(logEntry);
+    // console.log(logEntries);
+    writeToLog("addition", initialResult, inputValue, currentResult);
 }
 
 function subtract() {
@@ -44,6 +53,7 @@ function subtract() {
     const initialResult = currentResult;
     currentResult -= inputValue;
     writeOutput("-", initialResult, inputValue);
+    writeToLog("subtraction", initialResult, inputValue, currentResult);
 }
 
 function multiply() {
@@ -51,6 +61,7 @@ function multiply() {
     const initialResult = currentResult;
     currentResult *= inputValue;
     writeOutput("*", initialResult, inputValue);
+    writeToLog("multiplication", initialResult, inputValue, currentResult);
 }
 
 function divide() {
@@ -58,6 +69,7 @@ function divide() {
     const initialResult = currentResult;
     currentResult /= inputValue;
     writeOutput("/", initialResult, inputValue);
+    writeToLog("division", initialResult, inputValue, currentResult);
 }
 
 addBtn.addEventListener("click", add);

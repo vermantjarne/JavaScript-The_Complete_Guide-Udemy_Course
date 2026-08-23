@@ -1,3 +1,1 @@
-Within an array or object, a key may have the exact same name as its value, if the value is a variable, for example. JavaScript will look for a variable of sorts for its value, rather than referring back to its own key.
-
 `typeof` can be used easily within the console to verify the type of a variable, object, etc.
