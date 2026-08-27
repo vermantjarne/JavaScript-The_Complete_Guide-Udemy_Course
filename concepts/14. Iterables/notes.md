@@ -1,0 +1,13 @@
+A set is an iterable that has a few methods available. The order is not guaranteed and all entries in the set must be unique. This is what sets are mostly used for - ensuring no duplicate values exist.
+
+Sets are always created using the `Set()` constructor with the `new` keyword. The methods for sets are simpler than for arrays, as they are unordered. For example, sets have the `add()`, `delete()` and `has()` methods. Looping through set elements can be done by using the `entries()` method. This method returns an array of entries, where each entry consists of an array holding the value twice. The `keys()` and `values()` methods exist to retrieve the keys and values. These methods are made to be aligned with the methods for maps. It practically does the same thing for sets as it does for maps, with the difference that sets have the same key and value.
+
+A map is a key-value data of any kind and length, similar to objects, created with the `Map()` constructor. The keys may have any type of value. These keys and values may also be of mixed types. It is also iterable with a few methods available. The order is guaranteed (unlike for objects) and all keys must be unique.
+
+The `get()` method can be used on a function to retrieve the value of a given key. The `set()` method is used to set a given key-value pair in a map. Here, the `entries()` method also exists, holding the key and value in an array. The `keys()` and `values()` methods exist here as well. For the rest, the methods that exist are self-explanatory.
+
+Maps and objects are similar, so it's important to know when to use which. Maps generally have better performance for large quantities of data and when adding or removing data frequently. Objects are overall easier to create and are solid for small- or medium-sized data. In most cases, arrays and objects suffice, but knowing and being able to benefit from sets and maps is important.
+
+Weak sets can be created using the `WeakSet()` constructor. These are sets that have limited methods available. The main advantage of this is that the data is automatically cleared from memory as soon as it is no longer used. With a normal set, the data remains stored in memory even if it is never used. This is a more advanced use for sets, but can be interesting when optimizing code.
+
+Similarly, weak maps exist with `WeakMap()` to allow the data to be cleared from memory when its data is no longer used.
